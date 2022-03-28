@@ -1,23 +1,91 @@
-@import "../../base.scss";
+@import '../../_base.scss';
+$text-color:#b1bdb4;
+$blak-primary:#16181b;
+$blak-secondary:#121417;
+$border-color:#4c4c4c;
+
+$breakpoint-medium:1224px;
+$breakpoint-small:520px;
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 1rem 3rem ;
-
-    background-color: $blank-primary;
+    padding: 2rem 3rem;
+    background-color: #16181b;
     height: 10vh;
     width: 100%;
-    
-    &__menu {
+
+    &__menu  {
         display: none;
     }
+
     &__logo {
-        width: 50px;
-        height: 50px;
+       width: 150px;
+       height: 40px;
         object-fit: contain;
-        display: block;
+        // display: block;
+    }
+    form {
+        flex: 0.6;
+        display: flex;
+        padding: 0.1rem;
+        margin: 0.1rem;
+        border-radius: 3px;
+        border: 1.2px solid;
+        background-color:$blak-secondary ;
+
+        input {
+            width: 100%;
+            border:  none;
+            outline: none;
+            font-weight: 500;
+            background-color: transparent;
+            padding: 0.3rem;
+            color:$text-color ;
+        }
+        button {
+            padding-right: 10px;
+            color: $text-color;
+            background-color: transparent;
+            border: none;
+            &:focus {
+                border: none;
+            }
+        }
+    }
+    &__icons {
+        flex: 0.15;
+        display: flex;  
+        justify-content: space-around;
+        align-items: center;
+        img {
+            width: 40px;
+            border-radius: 50%;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width:$breakpoint-small) {
+    .header {
+        padding: 2rem 0.50rem;
+        display: flex;
+        justify-content: space-between;     
+
+
+        form {
+            flex: 1;
+            margin: 0 10px;
+        }
+        &__menu {
+            display: block;
+        }
+        &__logo {
+            display: none;
+        }
+        &__icons > *:not(img) {
+            display: none;
+        }
     }
 }

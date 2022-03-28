@@ -1,11 +1,49 @@
 import React from 'react';
 import './_sidebar.scss'
+import {
+    MdSubscriptions,
+    MdExitToApp,
+    MdThumbUp,
+    MdHistory,
+    MdLibraryBooks,
+    MdHome,
+    MdSentimentDissatisfied,
+} from "react-icons/md"
 
-const Sidebar = () => {
+const Sidebar = ({ sidebar }) => {
     return (
-        <div className='border border-danger'>
-            Sidebar
-        </div>
+        <nav className={sidebar?"sidebar open":"open"}>
+            <li>
+                <MdHome/>
+                <span>Home</span>
+            </li>
+            <li>
+                <MdSubscriptions/>
+                <span>Subscriptions</span>
+            </li>
+            <li>
+                <MdThumbUp/>
+                <span>Liked Video</span>
+            </li>
+            <li>
+                <MdHistory/>
+                <span>History</span>
+            </li>
+            <li>
+                <MdLibraryBooks/>
+                <span>Library</span>
+            </li>
+            <li>
+                <MdSentimentDissatisfied/>
+                <span>I don't know</span>
+            </li>
+            <hr />
+            <li>
+                <MdExitToApp/>
+                <span>Log out</span>
+            </li>
+            <hr />
+        </nav>
     );
 }
 
