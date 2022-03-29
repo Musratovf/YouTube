@@ -12,7 +12,7 @@ import {
 
 const Sidebar = ({ sidebar }) => {
     return (
-        <nav className={sidebar?"sidebar open":"open"}>
+        <nav className={sidebar?"sidebar open":"sidebar"}>
             <li>
                 <MdHome/>
                 <span>Home</span>
