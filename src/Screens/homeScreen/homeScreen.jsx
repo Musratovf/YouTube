@@ -8,8 +8,8 @@ const Homescreen = () => {
         <Container>
             <CategoriesBar/>
             <Row>
-                {[...new Array(20)].map(() => (
-                    <Col lg={3} md={4}>
+                {[...new Array(20)].map((element, index) => (
+                    <Col key={index} lg={3} md={4}>
                         <Video/>
                     </Col>
                 ))}

@@ -10,9 +10,11 @@ import {
     MdSentimentDissatisfied,
 } from "react-icons/md"
 
-const Sidebar = ({ sidebar }) => {
+const Sidebar = ({ sidebar, handleToogleSidebar }) => {
     return (
-        <nav className={sidebar?"sidebar open":"sidebar"}>
+        <nav 
+            className={sidebar?"sidebar open":"sidebar"}
+            onClick={ () => handleToogleSidebar ( false ) }>
             <li>
                 <MdHome/>
                 <span>Home</span>
