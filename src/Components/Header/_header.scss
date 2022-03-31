@@ -18,6 +18,8 @@ $breakpoint-small:520px;
 
     &__menu  {
         display: none;
+
+        
     }
 
     &__logo {
@@ -63,6 +65,9 @@ $breakpoint-small:520px;
             width: 40px;
             border-radius: 50%;
             object-fit: contain;
+            &:hover {
+                box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 13px;
+            }
         }
     }
 }

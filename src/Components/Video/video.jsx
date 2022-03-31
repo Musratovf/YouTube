@@ -3,6 +3,10 @@ import './_video.scss'
 
 import {AiFillEye} from "react-icons/ai"
 
+// const [fetchApi, setFetchApi] = useState(null);
+
+
+
 const Video = () => {
     return <div className="video">
         <div className="video__top">

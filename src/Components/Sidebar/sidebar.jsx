@@ -16,7 +16,7 @@ const Sidebar = ({ sidebar, handleToogleSidebar }) => {
             className={sidebar?"sidebar open":"sidebar"}
             onClick={ () => handleToogleSidebar ( false ) }>
             <li>
-                <MdHome/>
+                <MdHome />
                 <span>Home</span>
             </li>
             <li>
