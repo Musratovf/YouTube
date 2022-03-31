@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { Children } from 'react';
 import { Container } from 'react-bootstrap';
 import { useState } from 'react';
 import './_app.scss';
 import Header from './Components/Header/Header';
 import Sidebar from './Components/Sidebar/sidebar';
-import HomeScreen from './Screens/homeScreen/homeScreen';
+import Homescreen from './Screens/homeScreen/homeScreen';
 import Login from './Screens/LoginScreen/Login';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { BrowserRouter, Router, Route, Routes} from 'react-router-dom';
-
-const Layout = ({children}) => {
-  const [sidebar, toogleSidebar] = useState(false);
+const Layout = ({ children }) => {
+	const [sidebar, toogleSidebar] = useState(false);
 
 	const handleToogleSidebar = () => toogleSidebar((value) => !value);
+
 	return (
 		<>
 			<Header handleToogleSidebar={handleToogleSidebar} />
@@ -22,7 +22,7 @@ const Layout = ({children}) => {
 					handleToogleSidebar={handleToogleSidebar}
 				/>
 				<Container fluid className='app__main  border-warning'>
-          {children}
+					{children}
 				</Container>
 			</div>
 		</>
@@ -32,22 +32,22 @@ const Layout = ({children}) => {
 function App() {
 	return (
 		<Routes>
-      <Route path='/'>
+
+			<Route path='' element={
         <Layout>
-          <HomeScreen />
-        </Layout>
-      </Route>
+          <Homescreen/>
+      </Layout>}>
+			</Route>
 
-      <Route path='/auth'>
-        <Login />
-      </Route>
-
-      <Route path='/search'>
+			<Route path='/auth' element={<Login/>}>
+			</Route>
+      
+      <Route path='/search' element={
         <Layout>
-          <h1>Search Results</h1>
-        </Layout>
-      </Route>
-
+          <h2>Search Results</h2>
+      </Layout>}>
+			</Route>
+      
 		</Routes>
 	);
 }
