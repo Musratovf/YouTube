@@ -13,7 +13,7 @@ const Video = () => {
 		fetch('https://jsonplaceholder.typicode.com/photos')
 			.then((response) => response.json())
 			.then((data) => {
-				setUsers(data);
+				setUsers(data.slice(0, 15));
 			});
 	}, []);
 
@@ -24,7 +24,7 @@ const Video = () => {
 					users.map((data) => (
 						<li key={data.id}>
 							<div className='video__top'>
-								<img src='https://i.ytimg.com/vi/1K2EbBZ_lxg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYp3Bsv_zv139gdphZ_PQbjdgYKw' alt='' />
+								<img src={data.url} alt='' />
 								<span>05:43</span>
 							</div>
 							<p className='video__heading'>{data.title}</p>
