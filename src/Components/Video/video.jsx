@@ -24,7 +24,7 @@ const Video = () => {
 					users.map((data) => (
 						<li key={data.id}>
 							<div className='video__top'>
-								<img src={data.url} alt='' />
+								<img className='video__img' src={data.url} alt='api-img' />
 								<span>05:43</span>
 							</div>
 							<div className='video__title'>
