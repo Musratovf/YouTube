@@ -9,17 +9,31 @@ $breakpoint-small:520px;
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 2rem 3rem;
-    background-color: #16181b;
-    height: 10vh;
-    width: 100%;
+    justify-content: space-between;
+    padding: 20px 20px; 
+    
+    &__icon {
+        margin-right: 20px;
+        &:hover {
+            cursor: pointer;
+            // border-radius: 50%;
+        }
+    }
+    
+    &__left {
+        display: flex;
+        align-items: center;
+    }
 
+    &__navlink {
+        padding: 0;
+    }
+    
     &__menu  {
-        display: none;
-
-        
+        display: block;
+        color: #000000;
+        cursor: pointer;
     }
 
     &__logo {
@@ -29,14 +43,14 @@ $breakpoint-small:520px;
         // display: block;
     }
     form {
-        flex: 0.6;
+        flex: 0.9;
         display: flex;
-        padding: 0.1rem;
-        margin: 0.1rem;
         border-radius: 3px;
-        border: 1.2px solid;
-        background-color:$blak-secondary ;
-
+        border-radius: 20px;
+        padding: 1px 10px; 
+        background-color: #EBEBEB;
+        border: none;
+        
         input {
             width: 100%;
             border:  none;
@@ -48,7 +62,6 @@ $breakpoint-small:520px;
         }
         button {
             padding-right: 10px;
-            color: $text-color;
             background-color: transparent;
             border: none;
             &:focus {
@@ -57,19 +70,18 @@ $breakpoint-small:520px;
         }
     }
     &__icons {
-        flex: 0.15;
-        display: flex;  
-        justify-content: space-around;
+        display: flex;
         align-items: center;
-        img {
+        .uzim {
             width: 40px;
             border-radius: 50%;
             object-fit: contain;
             &:hover {
-                box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 13px;
+                box-shadow: rgba(125, 125, 125, 0.3) 0px 0px 0px 6px;
+                cursor: pointer;
             }
-        }
     }
+}
 }
 
 @media (max-width:$breakpoint-small) {

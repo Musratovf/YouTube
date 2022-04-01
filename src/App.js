@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
 					sidebar={sidebar}
 					handleToogleSidebar={handleToogleSidebar}
 				/>
-				<Container fluid className='app__main  border-warning'>
+				<Container fluid className='app__main p-0  border-warning'>
 					{children}
 				</Container>
 			</div>

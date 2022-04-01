@@ -6,16 +6,23 @@ import { FaBars } from 'react-icons/fa'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { MdNotifications } from 'react-icons/md'
 import { MdApps } from 'react-icons/md'
+import logo from '../../Assets/Img/Black.svg'
+import { NavLink } from 'react-bootstrap';
+import camera from "../../Assets/Img/camera.svg"
 
 const Header = ({handleToogleSidebar}) => {
     return (
         <>
-        <div className='border border-dark header'>
+        <div className='border header'>
+            <div className="header__left">
             <FaBars
              className='header__menu'
              size={26}
              onClick={()=>handleToogleSidebar()}/>
-            <img className='header__logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png.png" alt="youtube logo" />
+             <NavLink className='header__navlink'>
+                <img className='header__logo' src={logo} alt="youtube logo" />
+             </NavLink>
+            </div>
         <form>
             <input type="text" placeholder='Search' />
             <button type='submit'>
@@ -23,9 +30,10 @@ const Header = ({handleToogleSidebar}) => {
             </button>
         </form>
         <div className='header__icons'>
-            <MdNotifications size={28} />
-            <MdApps size={28}/>
-            <img src={Uzim} alt="avatar" />
+            <img className='header__icon' src={camera} alt="" />
+            <MdNotifications className='header__icon' size={28} />
+            <MdApps className='header__icon' size={28}/>
+            <img className='uzim' src={Uzim} alt="avatar" />
         </div>
         </div>
         </>

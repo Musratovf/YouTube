@@ -1,6 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import './_categories.scss';
+import dollie from "../../Assets/Img/DollieBlair.svg"
+import left from "../../Assets/Img/Left.svg"
+import right from "../../Assets/Img/Right.svg"
 
 const keywords = [
 	'All',
@@ -29,6 +32,7 @@ const Categories = () => {
     }
 
 	return (
+		<>
 		<div className='CategoriesBar'>
 			{keywords.map((value, i) => (
 				<span 
@@ -39,6 +43,18 @@ const Categories = () => {
                 </span>
 			))}
 		</div>
+		<div className="CategoriesBar__wrap">
+		<div className="CategoriesBar__hero">
+			<img src={dollie} alt="dollie" />
+			<h2>Dollie Blair</h2>
+		</div>
+		<div className="CategoriesBar__bottom">
+			<img src={left} alt="left" />
+			<span> </span>
+			<img src={right} alt="right" />
+		</div>
+		</div>
+		</>
 	);
 };
 

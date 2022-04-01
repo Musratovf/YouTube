@@ -1,6 +1,5 @@
 @import '../../_base.scss';
 .sidebar {
-	background-color: $blak-secondary;
 	display: flex;
 	flex-direction: column;
 	width: 250px;
@@ -8,6 +7,9 @@
 	padding-top: 2rem;
 	transition: transform 0.4s ease-in;
 	
+	.hr-line {
+		background-color: #ffffff;
+	}
 
 	li {
 		display: flex;
@@ -17,7 +19,8 @@
 		padding: 0.6rem 1.5rem;
 
 		&:hover {
-			background-color: $border-color;
+			background-color:#d4d4d4;
+			color: #000000;
 		}
 		span {
 			margin-left: 1rem;
