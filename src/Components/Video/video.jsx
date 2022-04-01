@@ -27,11 +27,8 @@ const Video = () => {
 								<img src={data.url} alt='' />
 								<span>05:43</span>
 							</div>
-							<p className='video__heading'>{data.title}</p>
 							<div className='video__title'>
-                                <p>
-								Create app in 5 minutes #made by Chintu
-                                </p>
+							<p className='video__heading'>{data.title}</p>
 							</div>
 							<div className='video__details'>
 								<span>

@@ -9,6 +9,11 @@
     
     &__heading {
         font-size: 18px;
+        margin-bottom: 5px;
+        color: #000000;
+        font-weight: 700;
+        line-height: 20px;
+        color: #19202C;
     }
     
     &__list{
@@ -30,12 +35,6 @@
             background-color: #080808ec;
             border-radius: 3px;
         }
-    }
-
-    &__title {
-        margin-bottom: 0.1rem;
-        color: #ffffff;
-        @include line-clamp(1)
     }
     
     &__channel {

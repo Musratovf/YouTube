@@ -4,18 +4,23 @@ import './_sidebar.scss'
 import Subscriptions from "../../Assets/Img/Subscriptions.svg"
 import Trending from "../../Assets/Img/Trending.svg"
 import ShowMore from "../../Assets/Img/ShowMore.svg"
-import Setting from "../../Assets/Img/Setting.svg"
-import Nora from "../../Assets/Img/Nora.svg"
 import Music from "../../Assets/Img/Music.svg"
 import Liked from "../../Assets/Img/Liked.svg"
 import Library from "../../Assets/Img/Library.svg"
-import kolokolnik from "../../Assets/Img/kolokolnik.svg"
 import Home from "../../Assets/Img/Home.svg"
 import History from "../../Assets/Img/History.svg"
 import Games from "../../Assets/Img/Games.svg"
-import FoodOrange from "../../Assets/Img/FoodOrange.svg"
 import Favourites from "../../Assets/Img/Favourites.svg"
 import WatchLater from "../../Assets/Img/WatchLater.svg"
+import kolokolnik from "../../Assets/Img/kolokolnik.svg"
+import FoodOrange from "../../Assets/Img/FoodOrange.svg"
+import Setting from "../../Assets/Img/Setting.svg"
+import Nora from "../../Assets/Img/Nora.svg"
+import Gussie from "../../Assets/Img/Gussie.svg"
+import Emma from "../../Assets/Img/Emma.svg"
+import Eunice from "../../Assets/Img/Eunice.svg"
+import Belle from "../../Assets/Img/Belle.svg"
+import Leah from "../../Assets/Img/Leah.svg"
 
 const Sidebar = ({ sidebar, handleToogleSidebar }) => {
     return (
@@ -66,6 +71,36 @@ const Sidebar = ({ sidebar, handleToogleSidebar }) => {
             <li>
                 <img src={ShowMore} alt="ShowMore" />
                 <span>ShowMore</span>
+            </li>
+            <hr />
+            <h2 className='text-black'>Subscriptions   </h2>
+            <li>
+                <img src={Gussie} alt="Gussie" />
+                <span>Gussie Singleton</span>
+            </li>
+            <li>
+                <img src={Nora} alt="Nora" />
+                <span>Nora Francis</span>
+            </li>
+            <li>
+                <img src={Belle} alt="Belle" />
+                <span>Belle Briggs</span>
+            </li>
+            <li>
+                <img src={Eunice} alt="Eunice" />
+                <span>Eunice Cortez</span>
+            </li>
+            <li>
+                <img src={Emma} alt="Emma" />
+                <span>Emma Hanson</span>
+            </li>
+            <li>
+                <img src={Leah} alt="Leah" />
+                <span>Leah Berry</span>
+            </li>
+            <li>
+                <img src={Setting} alt="Setting" />
+                <span>Setting</span>
             </li>
         </nav>
     );
