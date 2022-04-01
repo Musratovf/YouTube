@@ -34,8 +34,7 @@ const Categories = () => {
 				<span 
                 onClick={()=>handleClick(value)}
                 key={i}
-                className={activeElement === value ? ' active' : ''}
-                >
+                className={activeElement === value ? ' active' : ''} >
                 {value}
                 </span>
 			))}
