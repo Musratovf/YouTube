@@ -27,7 +27,8 @@ const Sidebar = ({ sidebar, handleToogleSidebar }) => {
         <nav 
             className={sidebar?"sidebar open":"sidebar"}
             onClick={ () => handleToogleSidebar ( false ) }>
-            <li>
+           <ul className='sidebar__list'>
+           <li>
                 <img src={Home} alt="Home" />
                 <span>Home</span>
             </li>
@@ -72,7 +73,7 @@ const Sidebar = ({ sidebar, handleToogleSidebar }) => {
                 <img src={ShowMore} alt="ShowMore" />
                 <span>ShowMore</span>
             </li>
-            <hr />
+            <hr className='hr-line' />
             <h2 className='text-black'>Subscriptions   </h2>
             <li>
                 <img src={Gussie} alt="Gussie" />
@@ -102,6 +103,7 @@ const Sidebar = ({ sidebar, handleToogleSidebar }) => {
                 <img src={Setting} alt="Setting" />
                 <span>Setting</span>
             </li>
+           </ul>
         </nav>
     );
 }

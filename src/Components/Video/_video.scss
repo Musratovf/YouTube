@@ -5,18 +5,41 @@
     padding: 0.7rem;
     font-size: 0.9rem;
     cursor: pointer;
-    overflow-x: scroll;
+    overflow-x: auto;
 
+    &__bnnma {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__text {
+        position: absolute;
+        left: 180px;
+        right: 10px;
+        top: 120px;
+        text-align: center;
+        background-color: #000000;
+        opacity: 0.3;
+        border-radius: 12px;
+        color: #ffffff ;
+    }
     &__list {
+        position: relative;
         display: flex;
         justify-content: space-between;
         padding: 0;
         list-style: none;
+        
     }
     
     &__item {
-        margin-left: 40px;
+        position: relative;
+        margin-left: 30px;
+        &:nth-child(1) {
+            margin: 0;
+        }
 
+        
         strong {
             font-weight: 700;
             font-size: 16px;
@@ -27,6 +50,7 @@
     }
     
     &__img {
+        position: relative;
         width: 250px;
         height: 150px;
         border-radius: 10px;

@@ -11,18 +11,22 @@
 	.hr-line {
 		background-color: #ffffff;
 	}
-
+	&__list {
+		padding: 0;
+	}
+	
 	li {
 		display: flex;
 		align-items: center;
 		margin: 0.2rem 0 !important;
 		cursor: pointer;
-		padding: 0.6rem 1.5rem;
+		padding: 10px 40px;
 
 		&:hover {
 			background-color:#d4d4d4;
 			color: #000000;
 		}
+		
 		span {
 			margin-left: 1rem;
 			font-size: 14px;
@@ -39,6 +43,14 @@
 		
 		}
 	}
+	.text-black {
+        font-family: 'Arial', 'Mulish';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 23px;
+		padding-left: 40px;
+    }
 }
 
 @media (max-width: $breakpoint-medium) {

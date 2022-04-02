@@ -12,7 +12,6 @@ const Homescreen = () => {
                     <Col key={index} lg={3} md={6}>
                     </Col>
                 ))}
-                <Video/>
             </Row>
         </Container>
     );
