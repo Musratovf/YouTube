@@ -5,6 +5,7 @@ import dollie from '../../Assets/Img/DollieBlair.svg';
 import left from '../../Assets/Img/Left.svg';
 import right from '../../Assets/Img/Right.svg';
 import Video from '../Video/video';
+import Food from "../../Assets/Img/FoodOrange.svg"
 
 const keywords = [
 	'All',
@@ -56,17 +57,6 @@ const Categories = () => {
 				</div>
 			</div>
 			<Video />
-			<div className='CategoriesBar__wrap'>
-				<div className='CategoriesBar__hero'>
-					<h2>Recommended</h2>
-				</div>
-				<div className='CategoriesBar__bottom'>
-					<img src={left} alt='left' />
-					<img src={right} alt='right' />
-				</div>
-			</div>
-			<Video />
-
 		</>
 	);
 };

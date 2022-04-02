@@ -4,7 +4,16 @@
     padding: 0.5rem 0;
     font-size: 0.8rem;
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
+
+    &__chanel {
+        font-weight: 400;
+        font-size: 16px;
+        color: #C2C2C2 !important;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    
 
     &__wrap {
         display: flex;

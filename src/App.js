@@ -5,7 +5,7 @@ import './_app.scss';
 import Header from './Components/Header/Header';
 import Sidebar from './Components/Sidebar/sidebar';
 import Homescreen from './Screens/homeScreen/homeScreen';
-import Login from './Screens/LoginScreen/Login';
+// import Login from './Screens/LoginScreen/Login';
 import { Routes, Route, NavLink} from 'react-router-dom';
 
 const Layout = ({ children }) => {
@@ -38,8 +38,6 @@ function App() {
       </Layout>}>
 			</Route>
 
-			<Route path='/auth' element={<Login/>}>
-			</Route>
       
       <Route path='/search' element={
         <Layout>
