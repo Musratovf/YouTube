@@ -10,9 +10,9 @@ const Homescreen = () => {
             <Row>
                 {[...new Array(10)].map((element, index) => (
                     <Col key={index} lg={3} md={6}>
-                        <Video/>
                     </Col>
                 ))}
+                <Video/>
             </Row>
         </Container>
     );

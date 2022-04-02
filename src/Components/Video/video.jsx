@@ -1,5 +1,6 @@
 import './_video.scss';
 import React from 'react';
+import Categories from '../CategoriesBar/categories';
 
 function Video () {
 	const [users, setUsers] = React.useState([])

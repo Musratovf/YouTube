@@ -7,7 +7,6 @@ import Sidebar from './Components/Sidebar/sidebar';
 import Homescreen from './Screens/homeScreen/homeScreen';
 import Login from './Screens/LoginScreen/Login';
 import { Routes, Route, NavLink} from 'react-router-dom';
-import Video from './Components/Video/video';
 
 const Layout = ({ children }) => {
 	const [sidebar, toogleSidebar] = useState(false);
@@ -22,7 +21,9 @@ const Layout = ({ children }) => {
 					sidebar={sidebar}
 					handleToogleSidebar={handleToogleSidebar}
 				/>
-				<Video/>
+				<Container fluid className='app__main p-0  border-warning'>
+					{children}
+				</Container>
 			</div>
 		</>
 	);
