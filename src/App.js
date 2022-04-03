@@ -6,7 +6,7 @@ import Header from './Components/Header/Header';
 import Sidebar from './Components/Sidebar/sidebar';
 import Homescreen from './Screens/homeScreen/homeScreen';
 import { Routes, Route } from 'react-router-dom';
-import Home from './Components/Home/Home';
+import Chanel from "./Components/Chanel/chanel"
 
 const Layout = ({ children }) => {
 	const [sidebar, toogleSidebar] = useState(false);
@@ -42,7 +42,7 @@ function App() {
 
 				<Route path='/home' element={ 
 					<Layout>
-					<Home/>
+					<Chanel/>
 				</Layout>
 				 }>
 				</Route>

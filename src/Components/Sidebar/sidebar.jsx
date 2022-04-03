@@ -23,78 +23,96 @@ import Leah from '../../Assets/Img/Leah.svg';
 
 const Sidebar = () => {
 	return (
-		<div>
-			<NavLink to={"/home"} className='navlink' >
+		<div className='sidebar'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={Home} alt='Home' />
 				<span>Home</span>
 			</NavLink>
 
-			<NavLink to={"/home"} className='sidebar__link'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={Trending} alt='Subscriptions' />
 				<span>Trending</span>
 			</NavLink>
 
-			<NavLink to={"/"} className='sidebar__link'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={Subscriptions} alt='Subscriptions' />
 				<span>Subscriptions</span>
 			</NavLink>
 			<hr className='hr-line' />
-			<NavLink to={"/"} className='sidebar__link'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={Library} alt='Library' />
 				<span>Library</span>
 			</NavLink>
-			<NavLink to={"/"} className='sidebar__link'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={History} alt='History' />
 				<span>History</span>
 			</NavLink>
 
-			<NavLink to={"/"} className='sidebar__link'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={WatchLater} alt='WatchLater' />
 				<span>Watch later</span>
 			</NavLink>
 
-			<NavLink to={"/"} className='sidebar__link'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={Favourites} alt='Favourites' />
 				<span>Favourites</span>
 			</NavLink>
 
-			<NavLink to={"/"} className='sidebar__link'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={Liked} alt='Liked' />
 				<span>Liked videos</span>
 			</NavLink>
 
-			<NavLink to={"/"} className='sidebar__link'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={Music} alt='Music' />
 				<span>Music</span>
 			</NavLink>
 
-			<NavLink to={"/"} className='sidebar__link'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={Games} alt='Games' />
 				<span>Games</span>
 			</NavLink>
 
-			<NavLink to={"/"} className='sidebar__link'>
+			<NavLink to={'/'} className='sidebar__link'>
 				<img src={ShowMore} alt='ShowMore' />
 				<span>ShowMore</span>
 			</NavLink>
-{/* 
+
 			<hr className='hr-line' />
-			<h2 className='text-black'>Subscriptions </h2>
-			<img src={Gussie} alt='Gussie' />
-			<span>Gussie Singleton</span>
-			<img src={Nora} alt='Nora' />
-			<span>Nora Francis</span>
-			<img src={Belle} alt='Belle' />
-			<span>Belle Briggs</span>
-			<img src={Eunice} alt='Eunice' />
-			<span>Eunice Cortez</span>
-			<img src={Emma} alt='Emma' />
-			<span>Emma Hanson</span>
-			<img src={Leah} alt='Leah' />
-			<span>Leah Berry</span>
-			<img src={Setting} alt='Setting' />
-			<span>Setting</span> */}
-		</div>
+
+
+
+
+					<h2 className='text-black'>Subscriptions </h2>
+				<NavLink className={'sidebar__link'} to={'/home'}>
+					<img className='img-chanel' src={Gussie} alt='Gussie' />
+					<span>Gussie Singleton</span>
+				</NavLink>
+				<NavLink className={'sidebar__link'} to={'/home'}>
+					<img className='img-chanel' src={Nora} alt='Nora' />
+					<span>Nora Francis</span>
+				</NavLink>
+				<NavLink className={'sidebar__link'} to={'/home'}>
+					<img className='img-chanel' src={Belle} alt='Belle' />
+					<span>Belle Briggs</span>
+				</NavLink>
+				<NavLink className={'sidebar__link'} to={'/home'}>
+					<img className='img-chanel' src={Eunice} alt='Eunice' />
+					<span>Eunice Cortez</span>
+				</NavLink>
+				<NavLink className={'sidebar__link'} to={'/home'}>
+					<img className='img-chanel' src={Emma} alt='Emma' />
+					<span>Emma Hanson</span>
+				</NavLink>
+				<NavLink className={'sidebar__link'} to={'/home'}>
+					<img className='img-chanel' src={Leah} alt='Leah' />
+				<span>Leah Berry</span>
+				</NavLink>
+				<NavLink className={'sidebar__link'} to={'/home'}>
+					<img className='img-chanel' src={Setting} alt='Setting' />
+					<span>Setting</span>
+				</NavLink>
+			</div>
 	);
 };
 

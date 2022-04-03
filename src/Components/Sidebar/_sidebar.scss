@@ -11,10 +11,16 @@
 		display: flex;
 		align-items: center;
 		color: #898989 !important;
-	}
-	
-	.navlink:hover {
-		color: red !important;
+		padding: 10px;
+		text-decoration: none;
+		&:hover {
+			background-color: rgb(156, 156, 156);
+			color: #ffffff !important;
+		}
+		
+		span {
+			margin-left: 10px;
+		}
 	}
 	
 	.hr-line {
@@ -51,6 +57,17 @@
             }
 		
 		}
+	}
+	.imgs-icon {
+		text-decoration: none;
+	}
+	.imgs-icon span {
+		margin-left: 10px;
+	}
+	.img-chanel {
+		width: 30px;
+		height: 30px;
+		display: inline-block;
 	}
 	.text-black {
         font-family: 'Arial', 'Mulish';
