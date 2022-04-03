@@ -51,7 +51,9 @@ function Video({ VideoPage }) {
 										src={remods.thumbnailUrl}
 										alt=''
 									/>
-									<span className='video__secondtext'>2:12</span>
+									<span className='video__secondtext'>
+										2:12
+									</span>
 									<strong>{remods.title}</strong>
 									<p className='video__bnnma'>
 										{' '}
