@@ -1,12 +1,12 @@
 import React from 'react';
 import './_video.scss';
 import { AiFillEye } from 'react-icons/ai';
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import Food from "../../Assets/Img/FoodOrange.svg"
 
-function Video({ VideoPage }) {
+function Video() {
 	const [users, setUsers] = React.useState([]);
 	const [remod, setRemod] = React.useState([]);
-	const [chanel, setChanel] = React.useState([]);
 
 	React.useEffect(() => {
 		(async () => {
@@ -17,7 +17,6 @@ function Video({ VideoPage }) {
 			if (data) {
 				setUsers(data.slice(1, 10));
 				setRemod(data.slice(1, 10));
-				setChanel(data.slice(0, 1));
 			}
 		})();
 	}, []);
@@ -46,6 +45,7 @@ function Video({ VideoPage }) {
 								</NavLink>
 							))}
 					</ul>
+					<h2 className='dark'>Recommended</h2>
 					{/* second list */}
 					<div className='video__list'>
 						{remod.length > 0 &&
@@ -70,6 +70,13 @@ function Video({ VideoPage }) {
 							))}
 					</div>
 					{/* theerd list */}
+
+								<div className='iner d-flex align-items-center'>
+								<img src={Food} alt="fod" />
+								<h2 className='dark'>Food & Drink</h2>
+								</div>
+								<span>Recommended channel for you</span>
+					
 					<ul className='video__list'>
 						{remod.length > 0 &&
 							remod.map((remods) => (
