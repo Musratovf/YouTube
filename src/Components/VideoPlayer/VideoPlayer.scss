@@ -94,3 +94,41 @@ ul {
     margin-left: 55px;
     color: #C2C2C2 !important;
 }
+@media (max-width:1200px) {
+    .inner-map {
+        display: flex;
+        flex-direction: column;
+    }
+    .wiews {
+        display: flex;
+    }
+}
+@media (max-width:900px) {
+    .videoplayer__img {
+        width: 100%;
+    }
+    .left {
+        width: 400px;
+    }
+    .bnnma {
+        width: 600px;
+    }
+}
+@media (max-width:770px) {
+    .videoplayer__img {
+        width: 400px;
+        height: 300px;
+    }
+    .left {
+        width: 400px;
+    }
+    .bnnma {
+        width: 200px;
+    }
+    .wiews {
+        width: 400px;
+    }
+    .player-heading {
+        font-size: 20px;
+    }
+}

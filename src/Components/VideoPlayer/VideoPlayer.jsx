@@ -24,7 +24,7 @@ const Videoplayer = () => {
 		})();
 	}, []);
 	return (
-		<div className='d-flex'>
+		<div className='d-flex inner-map'>
 			<ul className='player__list'>
 				{videoPlayer.length > 0 &&
 					videoPlayer.map((player) => (
@@ -39,7 +39,7 @@ const Videoplayer = () => {
 									{player.title}
 								</h3>
 							</NavLink>
-							<div className='d-flex justify-content-between align-items-center'>
+							<div className='wiews d-flex justify-content-between align-items-center'>
 							<span className='player-text'>
 							123k views
 							</span>

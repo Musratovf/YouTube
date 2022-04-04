@@ -172,7 +172,16 @@
 .heading-text {
     font-size: 13px;
 }
-@media (max-width:1200px){
+@media (max-width:1000px){
+    .chanel__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chanel__navlinks {
+        margin-left: 0 !important;
+    }
+    
     .chanel__imeg {
         width: 350px;
         height: 230px;
@@ -185,5 +194,19 @@
     }
     .container {
         margin: 0 !important;
+    }
+    .fabel__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .binnima {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:1200px) {
+    .chanel__avatar  {
+        display: none;
     }
 }

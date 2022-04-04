@@ -102,7 +102,7 @@ const Home = () => {
 			Recommended channel
 			</span>
 			</div>
-		<div className='d-flex justify-content-between'>
+		<div className='d-flex justify-content-between binnima'>
 		<ul className='chanel__list'>
 				{chanel2.length > 0 &&
 					chanel2.map((channel2) => (

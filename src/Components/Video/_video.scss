@@ -5,7 +5,6 @@
     padding: 0.7rem;
     font-size: 0.9rem;
     cursor: pointer;
-
     &__navlink {
         text-decoration: none;
         margin-left: 30px;
@@ -86,4 +85,75 @@
         border-radius: 5px;
     }
 
+}
+
+// @media (min-width:1286px) {
+//     .video {
+//         width: 1100px !important;
+//     }
+// }
+@media (max-width:1250px) {
+    .video {
+        width: 1100px !important;
+    }
+}
+@media (max-width:1195px) {
+    .video {
+        width: 1100px !important;
+    }
+}
+@media (max-width:1100px) {
+    .video {
+        width: 987px !important;
+    }
+}
+@media (max-width:1190px) {
+    .video {
+        width: 1080px !important;
+    }
+}
+@media (max-width:1170px) {
+    .video {
+        width: 1000px !important;
+    }
+}
+@media (max-width:1190px) {
+    .video {
+        width: 900px !important;
+    }
+}
+@media (max-width:1000px) {
+    .video {
+        width: 900px !important;
+    }
+}
+@media (max-width:1000px) {
+    .video {
+        width: 800px !important;
+    }
+}
+@media (max-width:895px) {
+    .video {
+        width: 700px !important;
+    }
+}
+@media (max-width:778px) {
+    .video {
+        width: 650px !important;
+    }
+}
+@media (max-width:720px) {
+    .video {
+        width: 600px !important;
+    }
+}
+@media (max-width:684px) {
+    .video {
+        width: 550px !important;
+    }
+}
+@media (max-width:640px) {
+    .video {
+        width: 500px !important;
+    }
 }
