@@ -6,6 +6,7 @@ import left from '../../Assets/Img/Left.svg';
 import right from '../../Assets/Img/Right.svg';
 import Video from '../Video/video';
 import Food from "../../Assets/Img/FoodOrange.svg"
+import { NavLink } from 'react-router-dom';
 
 const keywords = [
 	'All',
@@ -47,8 +48,10 @@ const Categories = () => {
 			</div>
 			<div className='CategoriesBar__wrap'>
 				<div className='CategoriesBar__hero'>
+				<NavLink className={'video__navlink d-flex align-items-center'} to='/chanel'>
 					<img src={dollie} alt='dollie' />
-					<h2>Dollie Blair</h2>
+					<h2 className='dark'>Dollie Blair</h2>
+					</NavLink>
 				</div>
 				<div className='CategoriesBar__bottom'>
 					<img src={left} alt='left' />

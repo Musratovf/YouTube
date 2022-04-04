@@ -29,7 +29,7 @@ function Video({ VideoPage }) {
 					<ul className='video__list'>
 						{users.length > 0 &&
 							remod.map((user) => (
-								<NavLink className={'video__navlink'} to={'/home'}>
+								<NavLink className={'video__navlink'} to={'/video'}>
 									<li className='video__item' key={user.id}>
 									<img
 										className='video__img'
@@ -47,10 +47,11 @@ function Video({ VideoPage }) {
 							))}
 					</ul>
 					{/* second list */}
-					<ul className='video__list'>
+					<div className='video__list'>
 						{remod.length > 0 &&
 							remod.map((users) => (
-								<li className='video__item' key={users.id}>
+							<NavLink className={'video__navlink'} to={'/video'}>
+									<div className='video__item' key={users.id}>
 									<img
 										className='video__secondimg'
 										src={users.thumbnailUrl}
@@ -64,14 +65,16 @@ function Video({ VideoPage }) {
 										{' '}
 										<AiFillEye /> 80k views · 3 days ago
 									</p>
-								</li>
+								</div>
+							</NavLink>
 							))}
-					</ul>
+					</div>
 					{/* theerd list */}
 					<ul className='video__list'>
 						{remod.length > 0 &&
 							remod.map((remods) => (
 								<li className='video__item' key={remods.id}>
+									<NavLink className={'video__navlink'} to={'/video'}>
 									<img
 										className='video__img'
 										src={remods.thumbnailUrl}
@@ -83,6 +86,8 @@ function Video({ VideoPage }) {
 										{' '}
 										<AiFillEye /> 80k views · 3 days ago
 									</p>
+							</NavLink>
+
 								</li>
 							))}
 					</ul>

@@ -6,7 +6,8 @@ import Header from './Components/Header/Header';
 import Sidebar from './Components/Sidebar/sidebar';
 import Homescreen from './Screens/homeScreen/homeScreen';
 import { Routes, Route } from 'react-router-dom';
-import Chanel from "./Components/Chanel/chanel"
+import Chanel from './Components/Chanel/chanel';
+import Videoplayer from './Components/VideoPlayer/VideoPlayer';
 
 const Layout = ({ children }) => {
 	const [sidebar, toogleSidebar] = useState(false);
@@ -40,18 +41,19 @@ function App() {
 					</Layout>
 				}></Route>
 
-				<Route path='/home' element={ 
-					<Layout>
-					<Chanel/>
-				</Layout>
-				 }>
-				</Route>
-				
 			<Route
-				path='/search'
+				path='/chanel'
 				element={
 					<Layout>
-						<h2>Search Results</h2>
+						<Chanel />
+					</Layout>
+				}></Route>
+
+			<Route
+				path='/video'
+				element={
+					<Layout>
+						<Videoplayer />
 					</Layout>
 				}></Route>
 		</Routes>

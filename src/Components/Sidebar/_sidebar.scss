@@ -75,7 +75,7 @@
 		font-weight: 700;
 		font-size: 18px;
 		line-height: 23px;
-		padding-left: 40px;
+		padding-left: 10px !important;
     }
 }
 
@@ -94,6 +94,10 @@
             transform: translateX(0);
 		}
 	}
+	.text-black {
+		display: none;
+	}
+
 }
 
 

@@ -84,31 +84,31 @@ const Sidebar = () => {
 
 
 					<h2 className='text-black'>Subscriptions </h2>
-				<NavLink className={'sidebar__link'} to={'/home'}>
+				<NavLink className={'sidebar__link'} to={'/chanel'}>
 					<img className='img-chanel' src={Gussie} alt='Gussie' />
 					<span>Gussie Singleton</span>
 				</NavLink>
-				<NavLink className={'sidebar__link'} to={'/home'}>
+				<NavLink className={'sidebar__link'} to={'/chanel'}>
 					<img className='img-chanel' src={Nora} alt='Nora' />
 					<span>Nora Francis</span>
 				</NavLink>
-				<NavLink className={'sidebar__link'} to={'/home'}>
+				<NavLink className={'sidebar__link'} to={'/chanel'}>
 					<img className='img-chanel' src={Belle} alt='Belle' />
 					<span>Belle Briggs</span>
 				</NavLink>
-				<NavLink className={'sidebar__link'} to={'/home'}>
+				<NavLink className={'sidebar__link'} to={'/chanel'}>
 					<img className='img-chanel' src={Eunice} alt='Eunice' />
 					<span>Eunice Cortez</span>
 				</NavLink>
-				<NavLink className={'sidebar__link'} to={'/home'}>
+				<NavLink className={'sidebar__link'} to={'/chanel'}>
 					<img className='img-chanel' src={Emma} alt='Emma' />
 					<span>Emma Hanson</span>
 				</NavLink>
-				<NavLink className={'sidebar__link'} to={'/home'}>
+				<NavLink className={'sidebar__link'} to={'/chanel'}>
 					<img className='img-chanel' src={Leah} alt='Leah' />
 				<span>Leah Berry</span>
 				</NavLink>
-				<NavLink className={'sidebar__link'} to={'/home'}>
+				<NavLink className={'sidebar__link'} to={'/chanel'}>
 					<img className='img-chanel' src={Setting} alt='Setting' />
 					<span>Setting</span>
 				</NavLink>
