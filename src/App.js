@@ -2,7 +2,7 @@ import React, { Children } from 'react';
 import { Container } from 'react-bootstrap';
 import { useState } from 'react';
 import './_app.scss';
-import Header from './Components/Header/Header';
+import Header from "./Components/Header/Header"
 import Sidebar from './Components/Sidebar/sidebar';
 import Homescreen from './Screens/homeScreen/homeScreen';
 import { Routes, Route } from 'react-router-dom';
@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
 	);
 };
 
-function App() {
+function Main() {
 	return (
 		<Routes>
 			<Route
@@ -60,4 +60,4 @@ function App() {
 	);
 }
 
-export default App;
+export default Main;

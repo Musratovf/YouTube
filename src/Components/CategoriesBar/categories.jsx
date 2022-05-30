@@ -5,9 +5,7 @@ import dollie from '../../Assets/Img/DollieBlair.svg';
 import left from '../../Assets/Img/Left.svg';
 import right from '../../Assets/Img/Right.svg';
 import Video from '../Video/video';
-import Food from "../../Assets/Img/FoodOrange.svg"
 import { NavLink } from 'react-router-dom';
-
 const keywords = [
 	'All',
 	'React js',
@@ -27,19 +25,16 @@ const keywords = [
 	'Poor Coder',
 	'Shwetabh',
 ];
-
 const Categories = () => {
 	const [activeElement, setActiveElement] = useState('All');
 	const handleClick = (value) => {
 		setActiveElement(value);
 	};
-
 	return (
 		<>
 			<div className='CategoriesBar'>
 				{keywords.map((value, i) => (
-					<span
-						onClick={() => handleClick(value)}
+					<span onClick={() => handleClick(value)}
 						key={i}
 						className={activeElement === value ? ' active' : ''}>
 						{value}
